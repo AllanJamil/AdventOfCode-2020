@@ -28,7 +28,7 @@ public class Day3 {
         int down = 1;
 
         int treesEncountered = getTreesEncountered(right, down);
-        System.out.println(treesEncountered);
+        System.out.println("Trees encountered: " + treesEncountered);
     }
 
 
@@ -59,7 +59,7 @@ public class Day3 {
             if (location == '#')
                 treesEncountered++;
 
-            colLocation = (colLocation + right) % 31;
+            colLocation = (colLocation + right) % map[0].length;
             rowLocation += down;
         }
         return treesEncountered;
