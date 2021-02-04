@@ -11,7 +11,7 @@ public class Day1 {
     Multiplying them together produces 1721 * 299 = 514579, so the correct answer is 514579.
     */
 
-    List<Integer> values = InputProvider.integersFromInput("1");
+    final private List<Integer> values = InputProvider.integersFromInput("1");
     final int EXPECTED_SUM = 2020;
 
     public void getPart1Result() {
